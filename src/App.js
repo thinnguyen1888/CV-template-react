@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <div id="mySidenav" class="sidenav">
+        <a href="#" id="about">
+          About
         </a>
-      </header>
+        <a href="#" id="blog">
+          Blog
+        </a>
+        <a href="#" id="projects">
+          Projects
+        </a>
+        <a href="#" id="contact">
+          Contact
+        </a>
+      </div>
+
+      <div style={{ marginLeft: "80px" }}>
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+      </div>
     </div>
   );
 }
